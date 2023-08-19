@@ -5,7 +5,24 @@ useEffect(() => {
     document.title = 'Contact'
 })
     return (
-      <h1>Contact Page!</h1>
+      <main>
+        <h1>Contact Page!</h1>
+
+        <form>
+          <label>Phone:<br />
+            <input type="text" /><br />
+          </label>
+          <label>Email:<br />
+            <input type="text" /><br />
+          </label>
+          <label>Message:<br />
+            <textarea></textarea><br />
+          </label>
+
+          <button>Send message</button>
+        </form>
+
+      </main>
     )
   }
   

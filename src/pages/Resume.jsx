@@ -5,7 +5,13 @@ useEffect(() => {
     document.title = 'Resume'
 })
     return (
-      <h1>Resume Page!</h1>
+      <main>
+        <h1>Resume Page!</h1>
+
+        <p>
+          <a href="#" target="_blank">LinkedIn Resume</a>
+        </p>
+      </main>
     )
   }
   

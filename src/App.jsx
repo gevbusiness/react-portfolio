@@ -1,6 +1,8 @@
 //useState hook react re renders the page
 import { useState } from 'react'
 import Page from './components/Page'
+import Header from './components/Header'
+import Footer from './components/Footer'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -13,16 +15,9 @@ function App() {
 
   return (
     <div>
-      <nav>
-        <a onClick={handleNav} href="#">About</a>
-        <a onClick={handleNav} href="#">Contact</a>
-        <a onClick={handleNav} href="#">Portfolio</a>
-        <a onClick={handleNav} href="#">Resume</a>
-      </nav>
-
+      <Header handleNav={handleNav} /> 
       <Page currentPage={currentPage} />
-    
-
+      <Footer />
     </div>
   )
 }
